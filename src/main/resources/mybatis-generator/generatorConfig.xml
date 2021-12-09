@@ -57,7 +57,8 @@
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="XMLMAPPER" >
+<!--        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="XMLMAPPER" >-->
+        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="ANNOTATEDMAPPER" >
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
 
@@ -69,6 +70,11 @@
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
         </table>
         <table tableName="sys_region" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
+            <property name="useActualColumnNames" value="false" />
+            <!-- 数据库表主键 -->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+        </table>
+        <table tableName="test02" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">
             <property name="useActualColumnNames" value="false" />
             <!-- 数据库表主键 -->
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
