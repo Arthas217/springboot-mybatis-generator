@@ -56,9 +56,14 @@
         <sqlMapGenerator targetPackage="mapper" targetProject="${mybatis.resources}" >
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
+
+<!--        type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象-->
+<!--        type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象-->
+<!--        type="XMLMAPPER",生成SQLMapper XML文件和独立的Mapper接口-->
+
         <!-- 生成mapxml对应client，也就是接口dao -->
-<!--        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="XMLMAPPER" >-->
-        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="ANNOTATEDMAPPER" >
+        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="XMLMAPPER" >
+<!--        <javaClientGenerator targetPackage="com.bj.dao" targetProject="${mybatis.project}" type="ANNOTATEDMAPPER" >-->
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
 
