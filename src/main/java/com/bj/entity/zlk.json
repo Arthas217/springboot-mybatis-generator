@@ -1,0 +1,52 @@
+{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 0
+  },
+  "response": {
+    "numFound": 5,
+    "docs": [{
+      "business_code": ["101"],
+      "business_name": ["望京"],
+      "city_code": "101001",
+      "zone_code": "100",
+      "zone_name": "朝阳"
+    },
+      {
+        "business_code": ["103,106"],
+        "business_name": ["阜通,俸伯"],
+        "city_code": "101001",
+        "zone_code": "100",
+        "zone_name": "朝阳"
+
+      },
+      {
+        "business_code": ["104"],
+        "business_name": ["大望路"],
+        "city_code": "101001",
+        "zone_code": "100",
+        "zone_name": "朝阳"
+
+      }, {
+        "business_code": ["201,202,203"],
+        "business_name": ["回龙观, 天通苑,小汤山"],
+        "city_code": "101001",
+        "zone_code": "200",
+        "zone_name": "海淀"
+      }, {
+        "business_code": ["204"],
+        "business_name": ["霍营"],
+        "city_code": "101001",
+        "zone_code": "200",
+        "zone_name": "海淀"
+      }
+    ]
+  },
+  "facet_counts": {
+    "facet_queries": {},
+    "facet_fields": {
+      "business_code": ["204", 90, "104", 80, "103,106", 70, "201,202,203", 60, "101", 50]
+    },
+    "facet_intervals": {}
+  }
+}
