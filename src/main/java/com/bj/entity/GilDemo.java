@@ -83,13 +83,12 @@ public class GilDemo {
                     zone.setBusiness(businessList);
                 } else {
                     List<Businesss> list = zone.getBusiness();
-                    for (int i = 0; i < list.size(); i++) {
-                        Businesss businesss = list.get(i);
+                    list.stream().forEach(businesss -> {
                         List<String> businessCode1 = businesss.getBusinessCode();
                         businessCode1.add(bcode);
                         List<String> businessName = businesss.getBusinessName();
                         businessName.add(cnMap.get(bcode));
-                    }
+                    });
                 }
             });
             DataOut dataOut = new DataOut();
