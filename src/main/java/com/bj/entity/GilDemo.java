@@ -103,7 +103,12 @@ public class GilDemo {
 
     public static void main(String[] args) {
         DataOut result = getJsonZoneBusinessByCode("110100");
+        // java对象转为字符串
         System.out.println(JSONArray.toJSONString(result));
 
+        // json字符串 转化我java对象
+        String  test = "{\"cityCode\":\"110100\",\"zone\":[{\"business\":[{\"businessCode\":[\"0\"],\"businessName\":[\"全城\"]}],\"zoneCode\":\"0\",\"zoneName\":\"全城\"},{\"business\":[{\"businessCode\":[\"104\",\"103,106\",\"101\"],\"businessName\":[\"大望路\",\"阜通,俸伯\",\"望京\"]}],\"zoneCode\":\"100\",\"zoneName\":\"朝阳\"},{\"business\":[{\"businessCode\":[\"204\",\"201,202,203\"],\"businessName\":[\"霍营\",\"回龙观, 天通苑,小汤山\"]}],\"zoneCode\":\"200\",\"zoneName\":\"海淀\"}]}\n";
+        DataOut dataOut = JSON.parseObject(test, DataOut.class);
+        System.out.println(dataOut.getZone());
     }
 }
