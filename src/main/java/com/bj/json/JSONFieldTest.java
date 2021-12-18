@@ -1,11 +1,9 @@
 package com.bj.json;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import org.junit.Test;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * @Author 会游泳的蚂蚁
