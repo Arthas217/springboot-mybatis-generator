@@ -1,7 +1,5 @@
 package com.bj.reg;
 
-import sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
