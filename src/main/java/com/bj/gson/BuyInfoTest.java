@@ -8,7 +8,6 @@ import com.alibaba.fastjson.JSON;
  * @Date 2021/12/19 11:36
  */
 public class BuyInfoTest {
-
     public static void main(String[] args) {
         BuyInfo buyerInfo = new BuyInfo();
         buyerInfo.setBuyerName("Hollis");
