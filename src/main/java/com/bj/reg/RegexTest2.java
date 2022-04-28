@@ -46,6 +46,14 @@ public class RegexTest2 {
         Matcher matcher4 = compile4.matcher("010 - 12345");
         System.out.println(matcher4.matches());
 
+        System.out.println("======");
+        Pattern compile5 = Pattern.compile("\\d+\\s");
+        Matcher matcher5 = compile5.matcher("0101010101 ");
+        System.out.println(matcher5.matches());
+
+        String  str = "abc d";
+        String substring = str.substring(0, str.indexOf(" "));
+        System.out.println(substring.length());
 
 
     }

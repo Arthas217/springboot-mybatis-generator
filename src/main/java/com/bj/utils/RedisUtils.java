@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author 会游泳的蚂蚁
+ * https://juejin.cn/post/6844904179132006414#heading-3
  * @Description: Spring Boot中Redis的自动化配置类中默认配置
  * RedisTemplate<Object,Object>和StringRedisTemplate
  * @Date 2021/12/4 22:48
