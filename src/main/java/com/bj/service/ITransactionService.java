@@ -13,4 +13,7 @@ public interface ITransactionService {
      * 通过账号更新删除标识
      */
     int updateByAccount(TblUsers tblUsers) throws Exception;
+
+
+    int insert(TblUsers tblUsers) throws Exception;
 }
